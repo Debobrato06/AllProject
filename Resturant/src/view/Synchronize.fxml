@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #e6f2ff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SynchronizeController">
+    <stylesheets>
+        <URL value="@/assets/style/synchronize.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="362.0" layoutY="176.0" prefHeight="30.0" prefWidth="491.0" text="Clients table data  synchronizing" textFill="#b00e7e">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXProgressBar fx:id="client" layoutX="362.0" layoutY="239.0" prefHeight="11.0" prefWidth="578.0" />
+      <Label layoutX="362.0" layoutY="209.0" text="1 %" />
+      <Label layoutX="899.0" layoutY="209.0" prefHeight="18.0" prefWidth="39.0" text="100 %" />
+      <Label layoutX="361.0" layoutY="283.0" prefHeight="30.0" prefWidth="491.0" text="Food Bill table data  synchronizing" textFill="#0fa164">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXProgressBar fx:id="foodBill" layoutX="361.0" layoutY="346.0" prefHeight="11.0" prefWidth="578.0" stylesheets="@../assets/style/synchronize.css" />
+      <Label layoutX="361.0" layoutY="316.0" text="1 %" />
+      <Label layoutX="898.0" layoutY="316.0" prefHeight="18.0" prefWidth="39.0" text="100 %" />
+      <Label layoutX="361.0" layoutY="396.0" prefHeight="30.0" prefWidth="491.0" text="Food Payment table data  synchronizing" textFill="#2222a1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXProgressBar fx:id="foodPayment" layoutX="361.0" layoutY="459.0" prefHeight="11.0" prefWidth="578.0" />
+      <Label layoutX="361.0" layoutY="429.0" text="1 %" />
+      <Label layoutX="898.0" layoutY="429.0" prefHeight="18.0" prefWidth="39.0" text="100 %" />
+      <Label layoutX="360.0" layoutY="510.0" prefHeight="30.0" prefWidth="491.0" text="Food Bill table data  synchronizing" textFill="#8913a1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXProgressBar fx:id="food" layoutX="360.0" layoutY="573.0" prefHeight="11.0" prefWidth="578.0" />
+      <Label layoutX="360.0" layoutY="546.0" text="1 %" />
+      <Label layoutX="897.0" layoutY="546.0" prefHeight="18.0" prefWidth="39.0" text="100 %" />
+   </children>
+</AnchorPane>

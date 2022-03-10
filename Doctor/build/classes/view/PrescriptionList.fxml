@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="1150.0" style="-fx-background-color: #ecf0f5;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrescriptionListController">
+   <stylesheets>
+      <URL value="@/style/content.css" />
+   </stylesheets>
+   <children>
+      <BorderPane fx:id="borderpane" layoutX="14.0" prefHeight="677.0" prefWidth="1103.0">
+         <center>
+            <AnchorPane prefHeight="648.0" prefWidth="1103.0">
+               <children>
+                  <HBox alignment="TOP_RIGHT" layoutX="2.0" layoutY="45.0" prefHeight="641.0" prefWidth="1101.0">
+                     <children>
+                        <VBox prefHeight="271.0" prefWidth="1101.0">
+                           <children>
+                              <Pane prefHeight="43.0" prefWidth="1123.0" style="-fx-background-color: teal; -fx-background-radius: 5px;">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="8.0" prefHeight="25.0" prefWidth="158.0" text="Prescription List " textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="AddPrescription" accessibleRole="PARENT" layoutX="883.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#AddPrescription" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: #13a137;" text="Add Generate Prescription" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/126583-128.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="93.0" prefWidth="1090.0" style="-fx-background-color: #fff; -fx-background-radius: 5px;">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="16.0" text="P.ID">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="326.0" layoutY="16.0" prefHeight="19.0" prefWidth="35.0" text="Date">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="643.0" layoutY="17.0" prefHeight="19.0" prefWidth="57.0" text="Patient">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="14.0" layoutY="42.0" prefHeight="25.0" prefWidth="270.0" promptText="P.ID">
+                                       <effect>
+                                          <InnerShadow color="#8be5fc" />
+                                       </effect>
+                                    </TextField>
+                                    <TextField layoutX="643.0" layoutY="44.0" prefHeight="25.0" prefWidth="270.0" promptText="Patient">
+                                       <effect>
+                                          <InnerShadow color="#8be5fc" />
+                                       </effect>
+                                    </TextField>
+                                    <DatePicker layoutX="326.0" layoutY="43.0" prefHeight="25.0" prefWidth="270.0" promptText="22 Sep, 2019">
+                                       <effect>
+                                          <InnerShadow color="#8be5fc" />
+                                       </effect>
+                                    </DatePicker>
+                                    <Button accessibleRole="PARENT" layoutX="942.0" layoutY="40.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="149.0" snapToPixel="false" style="-fx-background-color: teal;" text="Search" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="885.0" layoutY="96.0" prefHeight="17.0" prefWidth="57.0" text="Search:">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="942.0" layoutY="96.0" prefHeight="25.0" prefWidth="158.0" promptText="Search" />
+                                    <TableView fx:id="table" layoutX="-1.0" layoutY="125.0" prefHeight="456.0" prefWidth="1103.0" style="-fx-background-radius: 2px;">
+                                      <columns>
+                                        <TableColumn fx:id="id" prefWidth="54.0" text="ID" />
+                                          <TableColumn fx:id="patientIds" prefWidth="75.0" text="P.ID" />
+                                          <TableColumn fx:id="clainteIds" prefWidth="86.0" text="Client ID" />
+                                          <TableColumn fx:id="referanceIds" prefWidth="94.0" text="Reference ID" />
+                                          <TableColumn fx:id="prescriptionDate" prefWidth="142.0" text="Prescription  Date" />
+                                          <TableColumn fx:id="chiefComplaintsIds" prefWidth="122.0" text="chief  Complaint ID" />
+                                          <TableColumn fx:id="testIds" prefWidth="74.0" text="Test ID" />
+                                          <TableColumn fx:id="nextVisitDate" prefWidth="145.0" text="Next Visit Date" />
+                                          <TableColumn fx:id="rulesForPatientIds" prefWidth="77.0" text="R. ID" />
+                                          <TableColumn fx:id="insertTime" minWidth="0.0" prefWidth="171.0" text="insert_time" />
+                                          <TableColumn fx:id="action" minWidth="0.0" prefWidth="62.0" text="Action" />
+                                      </columns>
+                                       <effect>
+                                          <InnerShadow color="#068a3f" />
+                                       </effect>
+                                    </TableView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

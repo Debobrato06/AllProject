@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #ecf0f5;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserInfoController">
+    <stylesheets>
+        <URL value="@/style/userinfo.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="64.0" layoutY="14.0" text="Frist Name:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="162.0" layoutY="14.0" prefHeight="25.0" prefWidth="253.0" />
+      <Label layoutX="64.0" layoutY="49.0" text="Last Name:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="162.0" layoutY="49.0" prefHeight="25.0" prefWidth="253.0" />
+      <Label layoutX="64.0" layoutY="80.0" text="Email        :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="162.0" layoutY="80.0" prefHeight="25.0" prefWidth="253.0" />
+      <Label layoutX="64.0" layoutY="114.0" text="User Name:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="162.0" layoutY="114.0" prefHeight="25.0" prefWidth="253.0" />
+      <Label layoutX="64.0" layoutY="146.0" text="Address     :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="162.0" layoutY="146.0" prefHeight="25.0" prefWidth="253.0" />
+      <Label layoutX="64.0" layoutY="179.0" text="Division    :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="212.0" text="District     :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="244.0" text="Upozilla    :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="162.0" layoutY="282.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: teal;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="choiceBox" layoutX="162.0" layoutY="179.0" prefHeight="27.0" prefWidth="253.0" style="-fx-background-color: white; -fx-border-color: lightgray;" />
+      <ChoiceBox fx:id="choiceBox1" layoutX="162.0" layoutY="212.0" prefHeight="25.0" prefWidth="253.0" />
+      <ChoiceBox fx:id="choiceBox2" layoutX="162.0" layoutY="244.0" prefHeight="25.0" prefWidth="253.0" />
+   </children>
+</AnchorPane>

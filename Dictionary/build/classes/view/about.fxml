@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="820.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutController">
+    <stylesheets>
+        <URL value="@/assets/style/about.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="202.0" fitWidth="235.0" layoutX="441.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/DB.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="410.0" layoutY="275.0" prefHeight="34.0" prefWidth="228.0" text="DEBOBRATO BISWAS" textFill="#87f204">
+         <font>
+            <Font name="Bookman Old Style Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="303.0" prefHeight="27.0" prefWidth="183.0" text="Junior Java Developer" textFill="#87f204">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="330.0" prefHeight="16.0" prefWidth="211.0" text="devbiswas1499@gmail.com" textFill="#87f204">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="347.0" prefHeight="16.0" prefWidth="143.0" text="+8801884347441" textFill="#87f204">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

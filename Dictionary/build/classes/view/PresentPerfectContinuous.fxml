@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="820.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PerfectContinuousController">
+    <stylesheets>
+        <URL value="@/assets/style/perfectcontinuous.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="198.0" layoutY="5.0" prefHeight="21.0" prefWidth="523.0" text="Present Perfect ContinuousTenses Rules" textFill="#0a0790">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="284.0" fitWidth="520.0" layoutX="217.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/Present4Tense.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="83.0" layoutY="332.0" prefHeight="21.0" prefWidth="703.0" text="(V1 = first form of verb, V2 = Second form of verb, V3 = Third form of verb)">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="359.0" prefHeight="21.0" prefWidth="713.0" text="RULES ::  Subject + has been/ have been + V1 + ing + object">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="82.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Has been is used with singular subjects.   Have been is used with plural subjects." wrappingWidth="740.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="83.0" layoutY="418.0" prefHeight="21.0" prefWidth="679.0" text="EXAMPLE :::">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="439.0" prefHeight="29.0" prefWidth="679.0" text="a. It has been raining since morning.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="468.0" prefHeight="29.0" prefWidth="679.0" text="b. I have been working here for two years.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="494.0" prefHeight="29.0" prefWidth="679.0" text="c. They have been playing cricket since 2001.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

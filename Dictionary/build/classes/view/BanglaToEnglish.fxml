@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="900.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BanglaToEnglishController">
+    <stylesheets>
+        <URL value="@/assets/style/banglatoenglish.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="english" focusColor="#0ce4c4" labelFloat="true" layoutX="573.0" layoutY="110.0" prefHeight="50.0" prefWidth="235.0" promptText="English Word">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="bangla" focusColor="#0ce4c4" labelFloat="true" layoutX="209.0" layoutY="110.0" onAction="#banglaWordSearch" prefHeight="50.0" prefWidth="235.0" promptText="Bangla Word">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+      </JFXTextField>
+      <ScrollPane layoutX="209.0" layoutY="179.0" prefHeight="293.0" prefWidth="599.0">
+         <content>
+            <TextArea fx:id="allPartShow" prefHeight="321.0" prefWidth="582.0" style="-fx-background-color: #527a7a;">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="20.0" />
+               </font>
+            </TextArea>
+         </content>
+      </ScrollPane>
+      <Label layoutX="240.0" layoutY="33.0" prefHeight="51.0" prefWidth="528.0" text="Bangla to  English Dictionary" textFill="#00ffbb">
+         <font>
+            <Font name="Bookman Old Style Bold" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

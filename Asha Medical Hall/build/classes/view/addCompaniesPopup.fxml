@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="164.0" prefWidth="434.0" style="-fx-background-color: #a366ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCompaniesPopupController">
+   <children>
+      <TextField fx:id="companyName" layoutX="75.0" layoutY="60.0" prefHeight="25.0" prefWidth="285.0" />
+      <Label layoutX="152.0" layoutY="28.0" prefHeight="25.0" prefWidth="131.0" text="Company Name">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="126.0" layoutY="112.0" mnemonicParsing="false" onAction="#save" style="-fx-background-color: green;" text="Save" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/326675-128.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="193.0" layoutY="112.0" mnemonicParsing="false" onAction="#reset" style="-fx-background-color: #e69900;" text="Reset" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/678134-128.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="close" layoutX="265.0" layoutY="112.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: red;" text="Close" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/211652-128.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line endX="100.0" layoutX="51.0" layoutY="41.0" startX="40.5" />
+      <Line endX="100.0" layoutX="238.0" layoutY="41.0" startX="40.5" />
+      <Line endX="90.5" endY="-10.0" layoutX="248.0" layoutY="51.0" startX="90.5" startY="9.0" />
+      <Line endX="90.5" endY="-10.0" layoutX="1.0" layoutY="51.0" startX="90.5" startY="9.0" />
+   </children>
+</AnchorPane>

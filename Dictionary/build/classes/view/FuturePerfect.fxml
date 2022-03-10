@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="820.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FuturePerfectController">
+    <stylesheets>
+        <URL value="@/assets/style/futureperfect.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="294.0" prefHeight="26.0" prefWidth="448.0" text="Future Perfect Tenses Rules" textFill="#0a0790">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="324.0" fitWidth="650.0" layoutX="214.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/Future3Tense.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="92.0" layoutY="365.0" prefHeight="21.0" prefWidth="703.0" text="(V1 = first form of verb, V2 = Second form of verb, V3 = Third form of verb)">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="390.0" prefHeight="21.0" prefWidth="713.0" text="RULES ::  Subject will/shall + have + V3 + object.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="412.0" prefHeight="21.0" prefWidth="679.0" text="EXAMPLE :::">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="429.0" prefHeight="29.0" prefWidth="679.0" text="a. They will have cooked food.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="453.0" prefHeight="29.0" prefWidth="679.0" text="b. I will have left the job.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="476.0" prefHeight="29.0" prefWidth="679.0" text="c. She will have prepared the lecture.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

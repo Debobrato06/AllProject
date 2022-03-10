@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="820.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AController">
+    <stylesheets>
+        <URL value="@/assets/style/a.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="284.0" prefHeight="29.0" prefWidth="272.0" text="Indefinite (A) Rules" textFill="#0a0790">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="17.0" layoutY="36.0" prefHeight="594.0" prefWidth="798.0">
+         <content>
+            <Pane prefHeight="1137.0" prefWidth="783.0" style="-fx-background-color: #527a7a;">
+               <children>
+                  <Label layoutX="10.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 1" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="27.0" prefHeight="29.0" prefWidth="677.0" text="কোন word এর পূর্বে ব্যবহৃত letter টি যদি consonant হয় তবে  তার  আগে a বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="48.0" prefHeight="29.0" prefWidth="153.0" text="1. I saw a cat." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="168.0" layoutY="50.0" prefHeight="29.0" prefWidth="236.0" text="2.They have a horse." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="73.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 2" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="100.0" prefHeight="29.0" prefWidth="750.0" text="কোন word এর প্রথম  letter টি  vowel হলেও যদি তার উচ্চারণ 'U' এর মত হয় ,তবে তার আগে" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="121.0" prefHeight="29.0" prefWidth="199.0" text="an   না বসে a  বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="164.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 3" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="186.0" prefHeight="29.0" prefWidth="750.0" text="কোন word এর প্রথমে  O থাকলে যদি তার উচ্চারণ 'Y' এর মত হয় ,তবে তার আগে a বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="209.0" prefHeight="29.0" prefWidth="329.0" text="1.He helped a one-eyed man." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="228.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 4" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="251.0" prefHeight="29.0" prefWidth="750.0" text="Singular common noun যদি এক জাতি নির্দেশ করে ,তবে তার আগে a বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="274.0" prefHeight="29.0" prefWidth="320.0" text="1. A cow is adomistic animal ." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="299.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 5" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="320.0" prefHeight="29.0" prefWidth="677.0" text="Hundred ,Thousand , Million , Dozen ইত্যাদি শব্দগুলোর পূর্বে  a  বসে। " textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="343.0" prefHeight="29.0" prefWidth="405.0" text="1.A hundred year old person died yesterday." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="372.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 6" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="400.0" prefHeight="29.0" prefWidth="750.0" text="numbe of , little, lot of , amount of ,few , good deal , great many ইত্যাদি যদি plural noun এর পূর্বে " textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="441.0" prefHeight="29.0" prefWidth="366.0" text="1. There is a little milk in the pot ." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="468.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 7" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="492.0" prefHeight="29.0" prefWidth="750.0" text="half, rather, many, such, quite ইত্যাদির পরে a বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="514.0" prefHeight="29.0" prefWidth="329.0" text="1. He is rather a fool." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="538.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 8" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="585.0" prefHeight="29.0" prefWidth="750.0" text="1. He went a hunting." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="611.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 9" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="631.0" prefHeight="29.0" prefWidth="765.0" text="যখন কোন ব্যক্তি বা বস্তুকে সরাসরি না বুঝিয়ে ঐ ব্যক্তির সমান যোগ্যতা বা গুণ নির্দেশ করা হয় তখন proper" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="673.0" prefHeight="29.0" prefWidth="230.0" text="1.You are a Shelley ,I see." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="699.0" prefHeight="29.0" prefWidth="153.0" text="Rules :: 10" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="725.0" prefHeight="29.0" prefWidth="750.0" text="কোন কিছুর মাত্র সংখা বুঝাতে a  বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="748.0" prefHeight="29.0" prefWidth="306.0" text="1. Seven days make a week." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="772.0" prefHeight="29.0" prefWidth="153.0" text="Rules :: 11" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="796.0" prefHeight="29.0" prefWidth="750.0" text="যখন superlative degree 'most' এর অর্থ very বা খুব বেশি নির্দেশ করে তখন সেখানে a বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="845.0" prefHeight="29.0" prefWidth="138.0" text="Rules :: 12" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="873.0" prefHeight="29.0" prefWidth="725.0" text="মাঝে মাঝে বিশেষ কিছু prease এর সাথে  a  বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="896.0" prefHeight="29.0" prefWidth="230.0" text="1. He has caught a cold." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="922.0" prefHeight="29.0" prefWidth="138.0" text="Rules :: 13" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="949.0" prefHeight="29.0" prefWidth="750.0" text="so, as, too, how ইত্যাদি adverb যদি কোন adjective কে qualify  করে তখন ঐ adjective " textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="991.0" prefHeight="29.0" prefWidth="405.0" text="1। How nice a bird it is." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="1018.0" prefHeight="29.0" prefWidth="147.0" text="Rules :: 14" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="1045.0" prefHeight="29.0" prefWidth="750.0" text="কোন proper noun যদি common noun এ রুপান্তরিত হয়, তবে সেক্ষেত্রে a বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="1072.0" prefHeight="29.0" prefWidth="446.0" text="1. A Rohan helped the distressed." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="562.0" prefHeight="29.0" prefWidth="765.0" text="অনেক সময় disguised preposition এর বদলে a  বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="141.0" prefHeight="29.0" prefWidth="187.0" text="1. They have a ewe." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="217.0" layoutY="143.0" prefHeight="29.0" prefWidth="219.0" text="2. It is a useful thing ." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="421.0" prefHeight="29.0" prefWidth="366.0" text="থাকে তবে তাদের পূর্বে a  বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="650.0" prefHeight="29.0" prefWidth="230.0" text="noun এর আগে  a  বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="818.0" prefHeight="29.0" prefWidth="750.0" text="1. Lead a most happy life ." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="969.0" prefHeight="29.0" prefWidth="405.0" text="এর পরে a বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

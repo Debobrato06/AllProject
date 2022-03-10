@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1150.0" style="-fx-background-color: #ecf0f5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DrugCompanyController">
+   <children>
+      <Label layoutX="21.0" layoutY="41.0" prefHeight="65.0" prefWidth="1107.0" style="-fx-background-color: teal; -fx-background-radius: 5px;" text="  Drug Company" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="21.0" layoutY="112.0" prefHeight="103.0" prefWidth="1107.0" style="-fx-background-color: teal;">
+         <children>
+            <Label layoutX="85.0" layoutY="14.0" prefHeight="25.0" prefWidth="148.0" text="Company Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="companyNameInput" layoutX="85.0" layoutY="47.0" prefHeight="32.0" prefWidth="339.0" promptText="Company Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#59c660" />
+               </effect>
+            </TextField>
+            <Label layoutX="540.0" layoutY="15.0" prefHeight="25.0" prefWidth="232.0" text="Priority miximum will be top " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="priorityInput" layoutX="540.0" layoutY="48.0" prefHeight="32.0" prefWidth="251.0" promptText="Priority">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#59c660" />
+               </effect>
+            </TextField>
+            <Button layoutX="845.0" layoutY="47.0" mnemonicParsing="false" onAction="#drugCompanyNameSave" prefHeight="32.0" prefWidth="124.0" style="-fx-background-color: Green; -fx-background-radius: 5px;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow choke="0.31" color="#36c24c" height="71.41" radius="37.427499999999995" width="80.3" />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="848.0" layoutY="223.0" prefHeight="27.0" prefWidth="63.0" text="Search:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="925.0" layoutY="221.0" prefHeight="32.0" prefWidth="203.0" promptText="Search" />
+      <TableView fx:id="drugCompanyTable" layoutX="22.0" layoutY="263.0" prefHeight="439.0" prefWidth="1107.0">
+         <columns>
+            <TableColumn fx:id="id" minWidth="230.0" prefWidth="175.0" text="SL" />
+            <TableColumn fx:id="company_name" minWidth="230.0" prefWidth="439.0" text="Company Name " />
+            <TableColumn fx:id="priority" minWidth="186.0" prefWidth="361.0" text="Priority" />
+            <TableColumn fx:id="action" minWidth="76.0" prefWidth="76.0" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

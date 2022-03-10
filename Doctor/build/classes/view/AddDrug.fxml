@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1150.0" style="-fx-background-color: #ecf0f5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDrugController">
+   <children>
+      <BorderPane>
+         <center>
+            <Pane prefHeight="700.0" prefWidth="1150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="22.0" layoutY="42.0" prefHeight="63.0" prefWidth="1099.0" style="-fx-background-color: teal; -fx-background-radius: 5px;" text="  Add Drug" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="973.0" layoutY="54.0" mnemonicParsing="false" onMouseClicked="#DrugList" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #414fa4;" text="Drug List" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/216424-128%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="resetIds" layoutX="464.0" layoutY="335.0" mnemonicParsing="false" onAction="#reset" prefHeight="32.0" prefWidth="81.0" style="-fx-background-color: #b30000;" text="Reset " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/326606-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="saveIds" layoutX="556.0" layoutY="335.0" mnemonicParsing="false" onAction="#save" prefHeight="32.0" prefWidth="81.0" style="-fx-background-color: #414fa4;" text="Save" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/1608823-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="drugNameInputField" alignment="CENTER" layoutX="841.0" layoutY="190.0" prefHeight="39.0" prefWidth="280.0" promptText="Drug Name ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow color="#59c660" />
+                     </effect>
+                  </TextField>
+                  <Label layoutX="841.0" layoutY="165.0" prefHeight="25.0" prefWidth="117.0" text="Drug Name ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="163.0" prefHeight="25.0" prefWidth="175.0" text="Drug Company Name ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="425.0" layoutY="165.0" prefHeight="25.0" prefWidth="190.0" text="Drug Generic Name ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="drugCompanyName" layoutX="22.0" layoutY="192.0" prefHeight="39.0" prefWidth="241.0" style="-fx-background-color: White; -fx-background-radius: 10px; -fx-border-color: Green;" />
+                  <ChoiceBox fx:id="drugGenericName" layoutX="425.0" layoutY="194.0" prefHeight="39.0" prefWidth="241.0" style="-fx-background-color: White; -fx-background-radius: 10px; -fx-border-color: Green;" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

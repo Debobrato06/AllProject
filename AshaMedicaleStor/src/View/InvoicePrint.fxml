@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="754.0" prefWidth="416.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InvoicePrintController">
+    
+   <children>
+      <Line endX="296.0" layoutX="110.0" layoutY="108.0" startX="-100.0" />
+      <Line endX="298.0" layoutX="110.0" layoutY="149.0" startX="-100.0" />
+      <Label fx:id="cashReceipt" layoutX="137.0" layoutY="109.0" prefHeight="36.0" prefWidth="161.0" text="CASH RECEIPT">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="productDescription" layoutX="10.0" layoutY="161.0" prefHeight="386.0" prefWidth="399.0" style="-fx-background-color: none; -fx-effect: none;">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="41.0" text="SL" />
+          <TableColumn fx:id="DescriptionInput" minWidth="0.0" prefWidth="210.0" text="Drug Name" />
+            <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="58.0" text="Quantity" />
+            <TableColumn fx:id="productPriceinput" minWidth="0.0" prefWidth="87.0" text="Price" />
+        </columns>
+    
+      </TableView>
+      <Line endX="299.0" layoutX="111.0" layoutY="558.0" startX="-100.0" />
+      <Line endX="299.0" layoutX="110.0" layoutY="640.0" startX="-100.0" />
+      <Label layoutX="22.0" layoutY="568.0" prefHeight="20.0" prefWidth="105.0" text="Total              :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPriceValue" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="323.0" layoutY="569.0" prefHeight="17.0" prefWidth="83.0" text="20000.00" />
+      <Label layoutX="155.0" layoutY="675.0" prefHeight="45.0" prefWidth="126.0" text="THANK YOU">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="589.0" prefHeight="20.0" prefWidth="105.0" text="Cash               :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cash" alignment="CENTER_RIGHT" layoutX="323.0" layoutY="590.0" prefHeight="17.0" prefWidth="83.0" text="00000" />
+      <Label layoutX="23.0" layoutY="609.0" prefHeight="20.0" prefWidth="105.0" text="Change          :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="change" alignment="CENTER_RIGHT" layoutX="323.0" layoutY="611.0" prefHeight="17.0" prefWidth="83.0" text="00000" />
+      <Label fx:id="drugPayemntID" layoutX="358.0" layoutY="703.0" prefHeight="17.0" prefWidth="2.0" />
+      <Label fx:id="invoiceInputValue" layoutX="355.0" layoutY="703.0" prefHeight="17.0" prefWidth="2.0" />
+      <Text layoutX="22.0" layoutY="662.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a software generated money receipt." wrappingWidth="181.13671875" />
+      <Text layoutX="290.0" layoutY="662.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IT support by DBSOFT." wrappingWidth="120.931640625" />
+      <Text layoutX="135.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S.A.ALI ROAD, MGURA" />
+      <Text layoutX="152.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01716251566" />
+      <ImageView fitHeight="60.0" fitWidth="207.0" layoutX="83.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/logo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="invoiceNumber" layoutX="281.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="132.0" />
+   </children>
+</AnchorPane>

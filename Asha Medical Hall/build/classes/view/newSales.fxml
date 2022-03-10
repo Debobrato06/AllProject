@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewSalesController">
+    <center>
+        <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+            
+            <children>
+         
+            
+                <BorderPane fx:id="borderpanfoodview" layoutX="469.0" layoutY="22.0" prefHeight="669.0" prefWidth="648.0">
+                    <top>
+                        <HBox fx:id="drugCategoryHbox" prefHeight="65.0" prefWidth="765.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <ScrollPane prefHeight="65.0" prefWidth="464.0">
+                                    <content>
+                                        <HBox fx:id="drugHBox" prefHeight="49.0" prefWidth="611.0" spacing="10.0">
+                                            <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </padding>
+                                        </HBox>
+                                    </content>
+                                </ScrollPane>
+                                <JFXTextField fx:id="filterDrugItems" labelFloat="true" prefHeight="43.0" prefWidth="135.0" promptText="Drug Name Search">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="10.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                </JFXTextField>
+                            </children>
+                        </HBox>
+                    </top>
+                    <bottom>
+                        <Pane prefHeight="234.0" prefWidth="765.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label layoutX="91.0" layoutY="38.0" prefHeight="20.0" prefWidth="152.0" text="Drug Name      :">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="90.0" layoutY="63.0" prefHeight="30.0" prefWidth="152.0" text="Category          :">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="91.0" layoutY="87.0" prefHeight="30.0" prefWidth="148.0" text="Price                 :">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="drugName" layoutX="247.0" layoutY="40.0" prefHeight="20.0" prefWidth="255.0" textFill="#7f19a4">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="drugCategory" layoutX="246.0" layoutY="65.0" prefHeight="30.0" prefWidth="176.0" textFill="#7f19a4">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="perDrugPrice" layoutX="243.0" layoutY="89.0" prefHeight="21.0" prefWidth="195.0" textFill="#7f19a4">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Pane layoutX="464.0" layoutY="36.0" prefHeight="102.0" prefWidth="174.0" style="-fx-border-color: gray;">
+                                    <children>
+                                        <Button fx:id="incrementButton" layoutX="49.0" layoutY="33.0" minWidth="28.0" mnemonicParsing="false" onAction="#incrementButton" prefHeight="22.0" prefWidth="28.0" style="-fx-background-color: #2d8659;">
+                                            <graphic>
+                                                <ImageView fitHeight="16.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../assets/image/126583-128.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Button>
+                                        <Button fx:id="decrementButton" layoutX="80.0" layoutY="33.0" minWidth="28.0" mnemonicParsing="false" onAction="#decrementButton" prefHeight="22.0" prefWidth="28.0" style="-fx-background-color: #cb3434;">
+                                            <graphic>
+                                                <ImageView fitHeight="17.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../assets/image/211863-128.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                            </padding>
+                                        </Button>
+                                        <Label fx:id="totalPrice" contentDisplay="CENTER" layoutX="67.0" layoutY="56.0" prefHeight="36.0" prefWidth="104.0" text=" 0000">
+                                            <font>
+                                                <Font name="System Bold" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="26.100006103515625" prefHeight="27.0" prefWidth="73.0" text="Quantity :">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="33.0" layoutY="57.0" prefHeight="29.0" prefWidth="34.0" text="৳ -">
+                                            <font>
+                                                <Font name="System Bold" size="22.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                <Button layoutX="515.0" layoutY="161.0" mnemonicParsing="false" onAction="#OkButton" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #264d73; -fx-background-radius: 5;" text="OK" textFill="WHITE">
+                                    <graphic>
+                                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../assets/image/183252-128.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Label layoutX="90.0" layoutY="161.0" prefHeight="30.0" prefWidth="51.0" text="Vat :">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="vatInput" layoutX="141.0" layoutY="164.0" onAction="#vatInput" prefHeight="26.0" prefWidth="67.0" promptText="15" text="15" />
+                                <Label layoutX="217.0" layoutY="164.0" prefHeight="27.0" prefWidth="24.0" text="\%">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="productId" layoutX="609.0" layoutY="161.0" prefHeight="32.0" prefWidth="32.0" />
+                        <TextField fx:id="addQuantityTextfield" layoutX="564.0" layoutY="39.0" prefHeight="12.0" prefWidth="61.0" promptText="100" />
+                            </children>
+                        </Pane>
+                    </bottom>
+                    <center>
+                        <ScrollPane fx:id="scrollPane" prefHeight="388.0" prefWidth="648.0" BorderPane.alignment="CENTER">
+                     <content>
+                        <VBox fx:id="drugShowVBox" prefHeight="428.0" prefWidth="631.0" />
+                     </content>
+                        </ScrollPane>
+                    </center>
+                </BorderPane>
+                <Pane layoutX="27.0" layoutY="470.0" prefHeight="144.0" prefWidth="430.0" style="-fx-background-color: white;">
+                    <children>
+                        <Label layoutX="82.0" layoutY="7.0" prefHeight="16.0" prefWidth="54.0" text="Total :">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="32.0" prefHeight="21.0" prefWidth="40.0" text="VAT :">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="31.0" layoutY="58.0" prefHeight="21.0" prefWidth="98.0" text="Net Amount :">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="23.0" layoutY="84.0" prefHeight="21.0" prefWidth="108.0" text="Paid Amount :">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="109.0" prefHeight="21.0" prefWidth="119.0" text="Return Amount :">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="total" layoutX="134.0" layoutY="9.0" prefHeight="18.0" prefWidth="200.0" />
+                        <Label fx:id="vat" layoutX="134.0" layoutY="34.0" prefHeight="18.0" prefWidth="200.0" />
+                        <Label fx:id="netAmount" layoutX="134.0" layoutY="61.0" prefHeight="18.0" prefWidth="200.0" />
+                        <Label fx:id="returnAmount" layoutX="130.0" layoutY="111.0" prefHeight="18.0" prefWidth="200.0" />
+                        <TextField fx:id="paidAmount" layoutX="131.0" layoutY="83.0" onAction="#returnAmount" prefHeight="24.0" prefWidth="152.0" />
+                    </children>
+                </Pane>
+                <TableView fx:id="drugOrderTable" editable="true" layoutX="28.0" layoutY="111.0" prefHeight="345.0" prefWidth="430.0">
+                    <columns>
+                        <TableColumn fx:id="sl" prefWidth="27.0" text="SL" />
+                        <TableColumn fx:id="name" prefWidth="243.0" text="Drug Name" />
+                        <TableColumn fx:id="quantityNumber" prefWidth="70.0" text="Quantity" />
+                        <TableColumn fx:id="price" prefWidth="85.0" text="Price" />
+                    </columns>
+                </TableView>
+                <Label layoutX="27.0" layoutY="47.0" prefHeight="19.0" prefWidth="90.0" text="Client Name :" textFill="#171616">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="clientName" labelFloat="true" layoutX="112.0" layoutY="38.0" prefHeight="26.0" prefWidth="138.0" promptText="Client Name" />
+                <Label layoutX="258.0" layoutY="46.0" prefHeight="19.0" prefWidth="54.0" text="Phone :" textFill="#171616">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="phoneNumber" labelFloat="true" layoutX="305.0" layoutY="38.0" promptText="Phone Number" />
+                <Label layoutX="29.0" prefHeight="19.0" prefWidth="122.0" text="Invoice  No :">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="invoiceNo" layoutX="151.0" layoutY="8.0" prefHeight="20.0" prefWidth="311.0">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="334.0" layoutY="618.0" onAction="#savePrint" prefHeight="32.0" prefWidth="123.0" style="-fx-background-color: #264d73; -fx-background-radius: 05;" text="Save &amp; Print" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/iconfinder_Print_56266.png" />
+                     </image></ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </JFXButton>
+            <Label layoutX="29.0" layoutY="82.0" prefHeight="19.0" prefWidth="98.0" text="Client Address :" textFill="#171616">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="clientAddress" labelFloat="true" layoutX="126.0" layoutY="73.0" prefHeight="26.0" prefWidth="321.0" promptText="Client Address" />
+              
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

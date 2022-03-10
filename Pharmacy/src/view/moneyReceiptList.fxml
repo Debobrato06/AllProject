@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="703.0" prefWidth="1150.0" style="-fx-background-color: #b3e6ff;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.MoneyReceiptListController">
+    <stylesheets>
+        <URL value="@/assets/style/moneyreceiptlist.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="13.0" layoutY="28.0" prefHeight="63.0" prefWidth="1130.0" style="-fx-background-color: #00b38f;">
+         <children>
+            <Label prefHeight="44.0" prefWidth="1100.0" style="-fx-background-color: #00b38f;" text=" MONEY RECEIPT LIST" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Bookman Old Style Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="moneyReceiptList" layoutX="11.0" layoutY="100.0" prefHeight="585.0" prefWidth="1130.0" style="-fx-background-color: NONE;">
+         <columns>
+            <TableColumn fx:id="SL" prefWidth="63.0" text="SL" />
+            <TableColumn fx:id="moneyReceiptNo" prefWidth="551.0" text="Money Receipt No" />
+            <TableColumn fx:id="discountAmount" prefWidth="182.0" text="Discount" />
+            <TableColumn fx:id="netAmount" prefWidth="207.0" text="Net Amount" />
+            <TableColumn fx:id="action" prefWidth="125.0" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="599.0" style="-fx-background-color: linear-gradient(to right, #00ffff, #9933ff);;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+    <stylesheets>
+        <URL value="@/assets/style/loginpage.css" />
+    </stylesheets>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <Pane layoutX="167.0" layoutY="25.0" prefHeight="339.0" prefWidth="265.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="userName" focusColor="#033be1" labelFloat="true" layoutX="29.0" layoutY="131.0" prefHeight="26.0" prefWidth="207.0" promptText="User Name">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="password" focusColor="#033be1" labelFloat="true" layoutX="29.0" layoutY="171.0" prefHeight="26.0" prefWidth="207.0" promptText="Password">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="loginId" layoutX="41.0" layoutY="244.0" onAction="#submit" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: linear-gradient(to right,#8533ff, #330080);;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="faildLogin" layoutX="32.0" layoutY="106.0" prefHeight="19.0" prefWidth="228.0" textFill="RED">
+               <font>
+                  <Font name="Times New Roman" size="10.0" />
+               </font>
+            </Label>
+            <CubicCurve controlX1="-67.0" controlX2="-67.0" controlY1="-73.0" controlY2="8.0" endX="-130.0" endY="8.0" fill="DODGERBLUE" layoutX="130.0" layoutY="290.0" startX="-130.0" startY="-73.0" stroke="WHITE" style="-fx-fill: linear-gradient(to top, #00ffff, #9933ff);" />
+            <ImageView fitHeight="54.0" fitWidth="134.0" layoutX="73.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/hrsoftbd_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <CubicCurve controlX1="-168.0" controlX2="-168.0" controlY1="-84.0" controlY2="-145.0" endX="-130.0" endY="-145.0" fill="DODGERBLUE" layoutX="562.0" layoutY="201.0" startX="-130.0" startY="-84.0" stroke="WHITE" style="-fx-fill: linear-gradient(to top, #00ffff, #9933ff);" />
+   </children>
+</AnchorPane>

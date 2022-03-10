@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="744.0" style="-fx-background-color: #527a7a;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.InputDataController">
+   <children>
+      <JFXTextField fx:id="english" focusColor="#a908ee" labelFloat="true" layoutX="108.0" layoutY="41.0" prefHeight="43.0" prefWidth="187.0" promptText="English" unFocusColor="#11f241">
+         <font>
+            <Font name="Bookman Old Style" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="bangla" focusColor="#a908ee" labelFloat="true" layoutX="326.0" layoutY="41.0" prefHeight="43.0" prefWidth="187.0" promptText="Bangla" unFocusColor="#11f241">
+         <font>
+            <Font name="Bookman Old Style" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="noun" focusColor="#a908ee" labelFloat="true" layoutX="543.0" layoutY="41.0" prefHeight="43.0" prefWidth="187.0" promptText="Noun" unFocusColor="#11f241">
+         <font>
+            <Font name="Bookman Old Style" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="verb" focusColor="#a908ee" labelFloat="true" layoutX="108.0" layoutY="133.0" prefHeight="43.0" prefWidth="187.0" promptText="Verb" unFocusColor="#11f241">
+         <font>
+            <Font name="Bookman Old Style" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="synonym" focusColor="#a908ee" labelFloat="true" layoutX="326.0" layoutY="133.0" prefHeight="43.0" prefWidth="187.0" promptText="Synonym" unFocusColor="#11f241">
+         <font>
+            <Font name="Bookman Old Style" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="antonym" focusColor="#a908ee" labelFloat="true" layoutX="543.0" layoutY="133.0" prefHeight="43.0" prefWidth="187.0" promptText="Antonym" unFocusColor="#11f241">
+         <font>
+            <Font name="Bookman Old Style" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="202.0" layoutY="266.0" onAction="#submit" prefHeight="35.0" prefWidth="93.0" style="-fx-border-color: #00cc00; -fx-background-color: #004d4d;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="543.0" layoutY="266.0" onAction="#reset" prefHeight="35.0" prefWidth="93.0" style="-fx-border-color: #00cc00; -fx-background-color: #004d4d;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

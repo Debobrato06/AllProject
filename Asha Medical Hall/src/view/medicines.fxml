@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="716.0" prefWidth="1135.0" style="-fx-background-color: #c299ff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MedicinesController">
+    
+   <children>
+      <TableView fx:id="drugListTable" layoutX="28.0" layoutY="113.0" prefHeight="579.0" prefWidth="1079.0">
+        <columns>
+          <TableColumn fx:id="sl" prefWidth="39.0" text="Sl" />
+          <TableColumn fx:id="drugNameCloumn" prefWidth="184.0" text="Drug Name" />
+            <TableColumn fx:id="drugPriceCloumn" prefWidth="78.0" text="Drug Price" />
+            <TableColumn fx:id="drugCompanyCloumn" prefWidth="177.0" text="drug Company" />
+            <TableColumn fx:id="drugPowerCloumn" prefWidth="82.0" text="Drug Power" />
+            <TableColumn fx:id="quantityCloumn" prefWidth="78.0" text="Quantity" />
+            <TableColumn fx:id="mfgDateCloumn" prefWidth="98.0" text="Mfg Date" />
+            <TableColumn fx:id="expDateCloumn" prefWidth="93.0" text="Exp Date" />
+            <TableColumn fx:id="insetDateCloumn" prefWidth="78.0" text="Insert Date" />
+            <TableColumn fx:id="updateDateCloumn" minWidth="2.0" prefWidth="84.0" text="Update Date" />
+            <TableColumn fx:id="drugType" minWidth="2.0" prefWidth="87.0" text="Drug Type" />
+        </columns>
+      </TableView>
+      <Pane layoutX="28.0" layoutY="49.0" prefHeight="55.0" prefWidth="1079.0" style="-fx-background-color: #a366ff;">
+         <children>
+            <TextField fx:id="searchMedicineText" layoutX="96.0" layoutY="16.0" onAction="#searchMedicine" prefHeight="25.0" prefWidth="810.0" promptText="Search medicine" />
+            <Button layoutX="913.0" layoutY="16.0" mnemonicParsing="false" onAction="#searchMedicineButton" text="Search">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/iconfinder_search_322497%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutX="997.0" layoutY="14.0" mnemonicParsing="false" onAction="#addMedicinePopup" style="-fx-background-color: #00b386;" text="Add Medicine">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/126583-128.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

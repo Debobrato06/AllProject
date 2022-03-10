@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1250.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.DictionaryController">
+    <stylesheets>
+        <URL value="@/assets/style/dictionary.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="borderpane" layoutX="-4.0" prefHeight="650.0" prefWidth="1300.0">
+         <left>
+            <VBox prefHeight="650.0" prefWidth="116.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton onAction="#E2B" prefHeight="25.0" prefWidth="101.0" style="-fx-border-color: #052364;" text="E2B" textFill="#052364">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="10.0" onAction="#B2E" prefHeight="25.0" prefWidth="93.0" style="-fx-border-color: #052364;" text="B2E" textFill="#052364">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="35.0" onAction="#input" prefHeight="25.0" prefWidth="108.0" style="-fx-border-color: #052364;" text="Input" textFill="#f8f8f8">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="820.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PerfectController">
+    <stylesheets>
+        <URL value="@/assets/style/perfect.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="224.0" layoutY="1.0" prefHeight="26.0" prefWidth="448.0" text="Present Perfect Tenses Rules" textFill="#0a0790">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="291.0" fitWidth="540.0" layoutX="159.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/Present3Tense%20.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="79.0" layoutY="341.0" prefHeight="21.0" prefWidth="703.0" text="(V1 = first form of verb, V2 = Second form of verb, V3 = Third form of verb)">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="367.0" prefHeight="21.0" prefWidth="713.0" text="RULES ::  Subject + has/have + V3 + object">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="77.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Has is used with singular subjects.   Have is used with plural subjects." wrappingWidth="740.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="75.0" layoutY="420.0" prefHeight="21.0" prefWidth="679.0" text="EXAMPLE :::">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="441.0" prefHeight="29.0" prefWidth="679.0" text="a. They have played a match.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="467.0" prefHeight="29.0" prefWidth="679.0" text="b. She has cooked the food.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="495.0" prefHeight="29.0" prefWidth="679.0" text="c. I have written a letter.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

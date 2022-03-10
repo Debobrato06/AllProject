@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="1200.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PresentController">
+    <stylesheets>
+        <URL value="@/assets/style/present.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="664.0" prefWidth="1200.0">
+         <top>
+            <Pane prefHeight="60.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton layoutX="88.0" layoutY="14.0" onAction="#indefinite" prefHeight="25.0" prefWidth="160.0" style="-fx-border-color: #040b5a;" text="Indefinite" textFill="#040b5a">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="273.0" layoutY="14.0" onAction="#continuous" prefHeight="25.0" prefWidth="160.0" style="-fx-border-color: #040b5a;" text="Continuous" textFill="#040b5a">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="458.0" layoutY="14.0" onAction="#perfect" prefHeight="25.0" prefWidth="160.0" style="-fx-border-color: #040b5a;" text="Prefect" textFill="#040b5a">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="644.0" layoutY="14.0" onAction="#perfectContinuous" prefHeight="33.0" prefWidth="195.0" style="-fx-border-color: #040b5a;" text="Perfect Continuous" textFill="#040b5a">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

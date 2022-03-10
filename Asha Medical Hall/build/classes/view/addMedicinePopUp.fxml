@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="168.0" prefWidth="653.0" style="-fx-background-color: #a366ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddMedicinePopupController">
+    <children>
+        <Pane prefHeight="171.0" prefWidth="653.0" style="-fx-background-color: #a366ff; -fx-border-radius: 10px;">
+            <children>
+                <TextField fx:id="medicineName" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="228.0" promptText="Medicin Name">
+                    <effect>
+                        <InnerShadow color="#629ab2" />
+                    </effect>
+                </TextField>
+                <TextField fx:id="medicinePower" layoutX="250.0" layoutY="40.0" prefHeight="25.0" prefWidth="121.0" promptText="Power">
+                    <effect>
+                        <InnerShadow color="#629ab2" />
+                    </effect>
+                </TextField>
+                <TextField fx:id="medicinePrice" layoutX="18.0" layoutY="91.0" prefHeight="25.0" prefWidth="101.0" promptText="Medicine Price ">
+                    <effect>
+                        <InnerShadow color="#629ab2" />
+                    </effect>
+                </TextField>
+                <Label layoutX="78.0" layoutY="20.0" prefHeight="20.0" prefWidth="101.0" text="Medicin Name" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="271.0" layoutY="19.0" prefHeight="14.0" prefWidth="86.0" text="Power (mg)" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Button layoutX="200.0" layoutY="135.0" mnemonicParsing="false" onAction="#Save" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: green;" text="SAVE" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="11.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/image/326675-128.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label layoutX="507.0" layoutY="18.0" prefHeight="20.0" prefWidth="115.0" text="Company Name" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="companyName" layoutX="484.0" layoutY="40.0" prefHeight="25.0" prefWidth="155.0" promptText="Select Company Name" />
+                <Button layoutX="289.0" layoutY="135.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #e69900;" text="Reset" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/image/678134-128.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label layoutX="296.0" layoutY="74.0" prefHeight="19.0" prefWidth="69.0" text="MFG Date" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="506.0" layoutY="73.0" prefHeight="19.0" prefWidth="69.0" text="EXP Date" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Line endX="-100.0" endY="10.0" layoutX="135.0" layoutY="81.0" startX="-100.0" />
+                <Line endX="-108.0" endY="-0.5" layoutX="162.0" layoutY="81.0" startX="-126.5" startY="-0.5" />
+                <Line endX="267.29290771484375" endY="-8.79290771484375" layoutX="221.0" layoutY="94.0" startX="267.0" />
+                <Line endX="-76.0" endY="1.5" layoutX="579.0" layoutY="83.0" startX="-90.853515625" startY="1.5" />
+                <Line endX="30.5" endY="18.0" layoutX="551.0" layoutY="75.0" startX="30.5" startY="9.0" />
+                <Line endX="117.0" endY="0.5" layoutX="464.0" layoutY="83.0" startX="102.0" startY="0.5" />
+                <Line endX="20.0" endY="10.0" layoutX="262.0" layoutY="82.0" startX="20.0" startY="2.0" />
+                <Line endX="-89.0" layoutX="382.0" layoutY="83.0" startX="-100.0" />
+                <Line endX="101.0" endY="9.0" layoutX="273.0" layoutY="82.0" startX="101.0" startY="2.0" />
+                <Line endX="100.0" layoutX="274.0" layoutY="83.0" startX="87.0" />
+                <Button fx:id="exit" layoutX="379.0" layoutY="136.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: #ff0000;" text="CLOSE">
+                    <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/image/211652-128.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Line endX="267.29290771484375" endY="-8.79290771484375" layoutX="-12.0" layoutY="39.0" startX="267.0" />
+                <Line endX="-76.0" endY="1.5" layoutX="346.0" layoutY="28.0" startX="-90.853515625" startY="1.5" />
+                <Line endX="30.5" endY="18.0" layoutX="600.0" layoutY="21.0" startX="30.5" startY="9.0" />
+                <Line endX="117.0" endY="0.5" layoutX="512.0" layoutY="29.0" startX="102.0" startY="0.5" />
+                <Line endX="30.5" endY="18.0" layoutX="333.0" layoutY="22.0" startX="30.5" startY="9.0" />
+                <Line endX="117.0" endY="0.5" layoutX="246.0" layoutY="30.0" startX="102.0" startY="0.5" />
+                <Line endX="267.29290771484375" endY="-8.79290771484375" layoutX="225.0" layoutY="39.0" startX="267.0" />
+                <Line endX="-76.0" endY="1.5" layoutX="583.0" layoutY="28.0" startX="-90.853515625" startY="1.5" />
+                <Line endX="267.29290771484375" endY="-8.79290771484375" layoutX="-206.0" layoutY="39.0" startX="267.0" />
+                <Line endX="-76.0" endY="1.5" layoutX="152.0" layoutY="28.0" startX="-90.853515625" startY="1.5" />
+                <Line endX="30.5" endY="18.0" layoutX="160.0" layoutY="23.0" startX="30.5" startY="9.0" />
+                <Line endX="117.0" endY="0.5" layoutX="73.0" layoutY="31.0" startX="102.0" startY="0.5" />
+                <Label layoutX="55.0" layoutY="70.0" prefHeight="20.0" prefWidth="35.0" text="Price" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Line endX="30.5" endY="18.0" layoutX="74.0" layoutY="73.0" startX="30.5" startY="9.0" />
+                <Line endX="117.0" endY="0.5" layoutX="-13.0" layoutY="80.0" startX="102.0" startY="0.5" />
+                <DatePicker fx:id="mfgDate" layoutX="250.0" layoutY="92.0" />
+                <DatePicker fx:id="expDate" layoutX="433.0" layoutY="92.0" prefHeight="25.0" prefWidth="207.0" />
+            <TextField fx:id="medicineQuantity" layoutX="129.0" layoutY="92.0" prefHeight="25.0" prefWidth="107.0" promptText="Quantity">
+               <effect>
+                  <InnerShadow color="#629ab2" />
+               </effect>
+            </TextField>
+            <Line endX="-100.0" endY="10.0" layoutX="233.0" layoutY="82.0" startX="-100.0" />
+            <Line endX="-108.0" endY="-0.5" layoutX="260.0" layoutY="82.0" startX="-126.5" startY="-0.5" />
+            <Label layoutX="157.0" layoutY="71.0" prefHeight="20.0" prefWidth="61.0" text="Quantity" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Line endX="30.5" endY="18.0" layoutX="202.0" layoutY="74.0" startX="30.5" startY="9.0" />
+            <Line endX="117.0" endY="0.5" layoutX="115.0" layoutY="81.0" startX="102.0" startY="0.5" />
+            <Label layoutX="402.0" layoutY="18.0" prefHeight="20.0" prefWidth="42.0" text="Type" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="medicineType" layoutX="379.0" layoutY="40.0" prefHeight="25.0" prefWidth="86.0" promptText="Select Type" />
+            <Line endX="117.0" endY="0.5" layoutX="333.0" layoutY="29.0" startX="102.0" startY="0.5" />
+            <Line endX="267.29290771484375" endY="-8.79290771484375" layoutX="120.0" layoutY="39.0" startX="267.0" />
+            <Line endX="-76.0" endY="1.5" layoutX="478.0" layoutY="28.0" startX="-90.853515625" startY="1.5" />
+            <Line endX="267.29290771484375" endY="-8.79290771484375" layoutX="183.0" layoutY="39.0" startX="267.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

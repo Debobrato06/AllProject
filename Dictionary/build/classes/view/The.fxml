@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="820.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TheController">
+    <stylesheets>
+        <URL value="@/assets/style/the.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="308.0" layoutY="13.0" prefHeight="29.0" prefWidth="253.0" text="Definite (The) Rules" textFill="#0a0790">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="15.0" layoutY="57.0" prefHeight="514.0" prefWidth="801.0">
+         <content>
+            <Pane prefHeight="1347.0" prefWidth="783.0" style="-fx-background-color: #527a7a;">
+               <children>
+                  <Label layoutX="11.0" layoutY="2.0" prefHeight="29.0" prefWidth="750.0" text="Singular ও  Plural উভয় noun -এর আগে the  এর একই রুপ থাকে , পরিবর্তিত হয় না ।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="29.0" prefHeight="29.0" prefWidth="677.0" text="যেমন : the boy,the boys." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="59.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 1" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="86.0" prefHeight="29.0" prefWidth="677.0" text="কোন নির্দিষ্ঠ ব্যক্তি ,প্রানী, বা বস্তু বুঝাতে common noun এর আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="107.0" prefHeight="29.0" prefWidth="153.0" text="1.Bye the pen." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="168.0" layoutY="109.0" prefHeight="29.0" prefWidth="177.0" text="2.Eat the mango." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="132.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 2" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="159.0" prefHeight="29.0" prefWidth="750.0" text="অদ্বিতীয় বা অতুলনীয় বলে মনে করা হয় এমন কোন বস্তুর বা বস্তুসমষ্টির নামের আগে থে বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="180.0" prefHeight="29.0" prefWidth="153.0" text="1. the earth." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="169.0" layoutY="182.0" prefHeight="29.0" prefWidth="177.0" text="2. the moon." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="211.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 3" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="238.0" prefHeight="29.0" prefWidth="750.0" text="Phrase বা clause যোগ করার কারণে কোন noun  কে নির্দিষ্ঠ  বলে চিহ্নিত করা হলে তার আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="259.0" prefHeight="29.0" prefWidth="329.0" text="1.The bird that I caught was blue." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="284.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 4" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="311.0" prefHeight="29.0" prefWidth="750.0" text="পরিচিতির কারণে কিছুর নির্দিষ্টতা লাভ করলে তার আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="332.0" prefHeight="29.0" prefWidth="230.0" text="1. She is the garden." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="361.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 5" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="388.0" prefHeight="29.0" prefWidth="677.0" text="Superlative degree  ও ordinal numeral adjective  - এর আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="409.0" prefHeight="29.0" prefWidth="405.0" text="1।He is the best boy in the class." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="434.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 6" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="461.0" prefHeight="29.0" prefWidth="750.0" text="জাতি বুঝাতে , singular common noun এর আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="482.0" prefHeight="29.0" prefWidth="366.0" text="1. The cow is a useful animal." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="513.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 7" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="540.0" prefHeight="29.0" prefWidth="750.0" text="the + adjective  এরুপে ব্যবহ্রত হলে তা শ্রেণীর সকল ব্যক্তিকে বুঝায়।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="561.0" prefHeight="29.0" prefWidth="329.0" text="1. The rich are not always happy." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="591.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 8" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="645.0" prefHeight="29.0" prefWidth="750.0" text="1. The Himalayas." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="671.0" prefHeight="29.0" prefWidth="127.0" text="Rules :: 9" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="698.0" prefHeight="29.0" prefWidth="677.0" text="noun + of + noun এরুপে কোন নাম গঠিত হলে তার আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="719.0" prefHeight="29.0" prefWidth="230.0" text="1.The bay of bangal." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="750.0" prefHeight="29.0" prefWidth="153.0" text="Rules :: 10" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="780.0" prefHeight="29.0" prefWidth="750.0" text="adjective + noun এরুপে কোন নাম গঠিত হলে তার আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="801.0" prefHeight="29.0" prefWidth="236.0" text="1. the arabian ocean." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="830.0" prefHeight="29.0" prefWidth="153.0" text="Rules :: 11" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="857.0" prefHeight="29.0" prefWidth="750.0" text="Possessive adjective এর পরে কোন অঙ্গ প্রত্যঙ্গের নাম থাকলে তার পরিবর্তে the  বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="880.0" prefHeight="29.0" prefWidth="329.0" text="1.Pull him here by the ear." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="906.0" prefHeight="29.0" prefWidth="138.0" text="Rules :: 12" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="935.0" prefHeight="29.0" prefWidth="725.0" text="'যত -তত ' এভাবে ব্যবহ্রত হয়ে শব্দসমষ্টি যদি সমানুপাতিক বৃদ্ধি বা হ্রাস হয় তাহলে এরকম comprative " textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="985.0" prefHeight="29.0" prefWidth="230.0" text="1. The soonr the better." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="1008.0" prefHeight="29.0" prefWidth="138.0" text="Rules :: 13" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="1035.0" prefHeight="29.0" prefWidth="750.0" text="Proper noun এর পর কোন epithet বা গুণবাচক শব্দ যুক্ত হলে ঐ epithet টির আগে the বসে ।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="1056.0" prefHeight="29.0" prefWidth="405.0" text="1.Omar the great was a noble Caliph." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="1083.0" prefHeight="29.0" prefWidth="147.0" text="Rules :: 14" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="1110.0" prefHeight="29.0" prefWidth="750.0" text="মাসের আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="1131.0" prefHeight="29.0" prefWidth="446.0" text="1.He will come on the 10th of this month." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="1161.0" prefHeight="29.0" prefWidth="165.0" text="Rules :: 15" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="1188.0" prefHeight="29.0" prefWidth="750.0" text="Meterial noun এবং abstract noun + of + noue এর আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="1209.0" prefHeight="29.0" prefWidth="329.0" text="1.The water of this pond is turbid." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="1234.0" prefHeight="29.0" prefWidth="153.0" text="Rules :: 16" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="1261.0" prefHeight="29.0" prefWidth="750.0" text="common noun যখন  abstract noun  রুপে ব্যবহ্রত  হয় তখন তার আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="1282.0" prefHeight="29.0" prefWidth="591.0" text="1. The mother in her arose at the sight of the poor child." textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="619.0" prefHeight="29.0" prefWidth="765.0" text="সমুদ্র , নদী ,দ্বীপপুঞ্জ ,পবর্ত শ্রেণী,দেশের plural নাম ,ম্রুভূমি,অঞ্চল ইত্যাদি proper noun এর আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="954.0" prefHeight="29.0" prefWidth="329.0" text="adjective  -দুটির আগে the বসে।" textFill="#0b1d6b">
+                     <font>
+                        <Font name="Bookman Old Style" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

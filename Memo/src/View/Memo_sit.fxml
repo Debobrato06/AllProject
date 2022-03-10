@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1050.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Memo_sitController">
+    <stylesheets>
+        <URL value="@/style/memo_sit.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="115.0" layoutY="150.0" prefHeight="34.0" prefWidth="117.0" text="Customer Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="457.0" layoutY="151.0" prefHeight="34.0" prefWidth="52.0" text="Phone:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="730.0" layoutY="149.0" prefHeight="34.0" prefWidth="62.0" text="Address:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="247.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="289.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="329.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="370.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="411.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="451.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="495.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="537.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="575.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="618.0" prefHeight="34.0" prefWidth="131.0" text="Product Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="210.0" prefHeight="34.0" prefWidth="117.0" text="Per Unit Price">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="210.0" prefHeight="34.0" prefWidth="117.0" text="Unit">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="210.0" prefHeight="34.0" prefWidth="117.0" text="Total Price">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="210.0" prefHeight="34.0" prefWidth="131.0" text="Product Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="342.0" layoutY="51.0" prefHeight="25.0" prefWidth="384.0" text="Company Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="342.0" layoutY="71.0" prefHeight="25.0" prefWidth="384.0" text="Company Address">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="342.0" layoutY="91.0" prefHeight="25.0" prefWidth="384.0" text="Company Contact Info">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="656.0" prefHeight="34.0" prefWidth="90.0" text="Total Price:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="893.0" layoutY="14.0" prefHeight="34.0" prefWidth="62.0" text="SL No :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="966.0" layoutY="14.0" prefHeight="34.0" prefWidth="62.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerName" layoutX="232.0" layoutY="156.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice" layoutX="240.0" layoutY="252.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice1" layoutX="240.0" layoutY="294.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice2" layoutX="240.0" layoutY="335.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice3" layoutX="240.0" layoutY="376.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice4" layoutX="240.0" layoutY="417.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice5" layoutX="240.0" layoutY="457.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice6" layoutX="240.0" layoutY="502.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice7" layoutX="240.0" layoutY="542.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice8" layoutX="240.0" layoutY="582.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="perUnitPrice9" layoutX="240.0" layoutY="624.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit" layoutX="425.0" layoutY="249.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit1" layoutX="425.0" layoutY="291.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit2" layoutX="425.0" layoutY="332.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit3" layoutX="425.0" layoutY="373.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit4" layoutX="426.0" layoutY="417.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit5" layoutX="425.0" layoutY="454.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit6" layoutX="425.0" layoutY="499.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit7" layoutX="425.0" layoutY="539.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit8" layoutX="425.0" layoutY="579.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productUnit9" layoutX="425.0" layoutY="624.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice" layoutX="613.0" layoutY="251.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice1" layoutX="613.0" layoutY="293.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice2" layoutX="613.0" layoutY="334.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice3" layoutX="613.0" layoutY="375.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice4" layoutX="613.0" layoutY="416.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice5" layoutX="613.0" layoutY="456.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice6" layoutX="613.0" layoutY="501.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice7" layoutX="613.0" layoutY="541.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice8" layoutX="613.0" layoutY="581.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="productTotalPrice9" layoutX="613.0" layoutY="626.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="allProductTotalPrice" layoutX="613.0" layoutY="661.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="customerPhone" layoutX="513.0" layoutY="156.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label fx:id="customerAddress" layoutX="798.0" layoutY="156.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label alignment="CENTER" layoutX="346.0" layoutY="14.0" prefHeight="25.0" prefWidth="384.0" text="Company Logo">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

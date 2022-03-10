@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="733.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MasterController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="740.0" prefWidth="1315.0">
+         <left>
+            <VBox prefHeight="684.0" prefWidth="50.0" style="-fx-background-color: #3973ac;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button minHeight="14.0" minWidth="20.0" mnemonicParsing="false" onAction="#addInvoice" prefHeight="29.0" prefWidth="33.0" style="-fx-background-color: none; -fx-border-color: white;" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/126583-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="20.0" layoutY="20.0" minHeight="16.0" minWidth="24.0" mnemonicParsing="false" onAction="#invoiceList" prefHeight="29.0" prefWidth="33.0" style="-fx-background-color: none; -fx-border-color: white;" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fx:id="list" fitHeight="23.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/216424-128%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="62.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" onAction="#about" prefHeight="29.0" prefWidth="33.0" style="-fx-background-color: none; -fx-border-color: white;" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fx:id="about" fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/383085-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="20.0" layoutY="167.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" onAction="#Synchronize" prefHeight="29.0" prefWidth="33.0" style="-fx-background-color: none; -fx-border-color: white;" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/Synchronize.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="20.0" layoutY="167.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" onAction="#MoneyReceiptSetting" prefHeight="29.0" prefWidth="33.0" style="-fx-background-color: none; -fx-border-color: white;" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/2135920-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="20.0" layoutY="104.0" minHeight="16.0" minWidth="23.0" mnemonicParsing="false" onAction="#web" prefHeight="29.0" prefWidth="33.0" style="-fx-background-color: none; -fx-border-color: white;" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/326663-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <Pane prefHeight="49.0" prefWidth="1318.0" style="-fx-background-color: #2d5986;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="2.0" prefHeight="36.0" prefWidth="219.0" text="ABC Restaurant" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="close" layoutX="1247.0" layoutY="12.0" minWidth="53.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="29.0" prefWidth="53.0" style="-fx-background-color: none; -fx-border-color: White;">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/iconfinder_f-cross_256_282471.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="minimiz" layoutX="1187.0" layoutY="12.0" minWidth="53.0" mnemonicParsing="false" onAction="#minimizeAction" prefHeight="29.0" prefWidth="53.0" style="-fx-background-color: none; -fx-border-color: White;">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/211863-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="profileName" alignment="CENTER" layoutX="1025.0" layoutY="10.0" mnemonicParsing="false" onAction="#profileNameAction" prefHeight="34.0" prefWidth="132.0" style="-fx-background-color: none; -fx-border-color: gray;" text="Profile Nmae" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="profileID" layoutX="1030.0" layoutY="18.0" prefHeight="17.0" prefWidth="0.0" />
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

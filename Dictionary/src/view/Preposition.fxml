@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="665.0" prefWidth="1276.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrepositionController">
+    <stylesheets>
+        <URL value="@/assets/style/preposition.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="662.0" prefWidth="1276.0">
+         <top>
+            <Pane prefHeight="52.0" prefWidth="1348.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="229.0" layoutY="8.0" prefHeight="37.0" prefWidth="648.0" text="Rules of Preposition In English Language" textFill="#0d086f">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <VBox prefHeight="610.0" prefWidth="159.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton onAction="#simple" prefHeight="35.0" prefWidth="143.0" style="-fx-border-color: #00094d;" text="Simple " textFill="#00094d">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="20.0" layoutY="20.0" onAction="#doub" prefHeight="35.0" prefWidth="143.0" style="-fx-border-color: #00094d;" text="Double" textFill="#00094d">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#compound" prefHeight="25.0" prefWidth="137.0" style="-fx-border-color: #00094d;" text="Compound" textFill="#00094d">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="20.0" layoutY="20.0" onAction="#phrase" prefHeight="35.0" prefWidth="145.0" style="-fx-border-color: #00094d;" text="Phrase" textFill="#00094d">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton layoutX="20.0" layoutY="75.0" onAction="#praticiple" prefHeight="35.0" prefWidth="152.0" style="-fx-border-color: #00094d;" text="Participle" textFill="#00094d">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton layoutX="20.0" layoutY="130.0" onAction="#disguised" prefHeight="35.0" prefWidth="145.0" style="-fx-border-color: #00094d;" text="Disguised" textFill="#00094d">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton layoutX="20.0" layoutY="295.0" onAction="#appropriate" prefHeight="40.0" prefWidth="139.0" style="-fx-border-color: #00094d;" text="Appropriate " textFill="#00094d">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton layoutX="20.0" layoutY="350.0" onAction="#input" prefHeight="40.0" prefWidth="139.0" style="-fx-border-color: #00094d;" text="Input" textFill="#00094d">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="820.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.PastPerfectContinuousController">
+    <stylesheets>
+        <URL value="@/assets/style/pastperfectcontinuous.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="223.0" prefHeight="29.0" prefWidth="547.0" text="Present Perfect Continuous Tenses Rules" textFill="#0a0790">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="324.0" fitWidth="650.0" layoutX="205.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/Past4Tense.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="119.0" layoutY="372.0" prefHeight="21.0" prefWidth="703.0" text="(V1 = first form of verb, V2 = Second form of verb, V3 = Third form of verb)">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="397.0" prefHeight="21.0" prefWidth="713.0" text="RULES ::  Subject + had been + V1 + ing + object">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="426.0" prefHeight="21.0" prefWidth="679.0" text="EXAMPLE :::">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="447.0" prefHeight="29.0" prefWidth="679.0" text="a. It had been raining since Monday. ">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="476.0" prefHeight="29.0" prefWidth="679.0" text="b. They had been playing cricket since 2002.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="505.0" prefHeight="29.0" prefWidth="679.0" text="c. I had been living in India for three years.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

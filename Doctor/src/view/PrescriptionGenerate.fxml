@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1153.0" style="-fx-background-color: #ecf0f5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrescriptionGenerateController">
+    <stylesheets>
+        <URL value="@/style/prescriptionlist2.css" />
+    </stylesheets>
+    <children>
+     
+        <Label layoutX="520.0" layoutY="32.0" prefHeight="44.0" prefWidth="300.0" text="PATIENT INFORMATION" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="300.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+      
+        <AnchorPane layoutX="10.0" layoutY="55.0" prefHeight="93.0" prefWidth="1101.0" style="-fx-background-radius: 10px;">
+            <children>
+                <!--All Text Label of Patient Name,Patient Age,Gender,Phone,Date,Address,Referance start -->
+                <Label layoutX="17.0" layoutY="24.0" prefHeight="20.0" prefWidth="124.0" text="Patient Name">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                   
+                 
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="110.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+                
+                <Label layoutX="172.0" layoutY="24.0" prefHeight="20.0" prefWidth="124.0" text="Patient Age">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                
+                <Label layoutX="332.0" layoutY="24.0" minWidth="-Infinity" prefHeight="20.0" prefWidth="116.0" text="Gender" AnchorPane.leftAnchor="330.0" AnchorPane.rightAnchor="624.0">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="380.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+                
+                <Label layoutX="493.0" layoutY="24.0" prefHeight="17.0" prefWidth="72.0" text="Phone">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="540.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+                
+                <Label layoutX="656.0" layoutY="24.0" minWidth="-Infinity" prefHeight="20.0" prefWidth="107.0" text="Date ">
+                    
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="695.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+                
+                <Label layoutX="820.0" layoutY="24.0" prefHeight="17.0" prefWidth="72.0" text="Address">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                
+                <Label layoutX="980.0" layoutY="24.0" prefHeight="20.0" prefWidth="101.0" text="Reference">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="1050.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+                <!--All Text Label of Patient Name,Patient Age,Gender,Phone,Date,Address,Referance End -->
+                <!--All Text Feild of Patient Name,Patient Age,Gender,Phone,Date,Address,Referance Start -->
+                <TextField fx:id="patientName" layoutX="17.0" layoutY="44.0" prefHeight="25.0" prefWidth="124.0" promptText="Patient Name">
+                    <effect>
+                        <InnerShadow color="#4f30c2" />
+                    </effect>
+                </TextField>
+           
+                <TextField fx:id="patientAge" layoutX="172.0" layoutY="44.0" prefHeight="25.0" prefWidth="124.0" promptText="Patient Age">
+                    <effect>
+                        <InnerShadow color="#4f30c2" />
+                    </effect>
+                </TextField>
+                <ComboBox fx:id="Gender" layoutX="332.0" layoutY="44.0" prefHeight="25.0" prefWidth="124.0" promptText="Select Gender">
+                    <effect>
+                        <InnerShadow color="#4f30c2" />
+                    </effect>
+                </ComboBox>
+                <TextField fx:id="patientPhone" layoutX="493.0" layoutY="44.0" prefHeight="25.0" prefWidth="124.0" promptText="Phone">
+                    <effect>
+                        <InnerShadow color="#4f30c2" />
+                    </effect>
+                </TextField>
+                
+                <DatePicker fx:id="date" layoutX="656.0" layoutY="44.0" prefHeight="25.0" prefWidth="124.0" promptText="23 Sep,2019">
+                    <effect>
+                        <InnerShadow color="#4f30c2" />
+                    </effect>
+                </DatePicker>
+                <TextField fx:id="patientAddress" layoutX="820.0" layoutY="44.0" prefHeight="25.0" prefWidth="124.0" promptText="Address">
+                    <effect>
+                        <InnerShadow color="#4f30c2" />
+                    </effect>
+                </TextField>
+               
+                <ComboBox fx:id="Reference" layoutX="980.0" layoutY="44.0" prefHeight="25.0" prefWidth="124.0" promptText="Reference">
+                    <effect>
+                        <InnerShadow color="#4f30c2" />
+                    </effect>
+                </ComboBox>
+           
+                
+                <!--All Text Feild of Patient Name,Patient Age,Gender,Phone,Date,Address,Referance End -->
+            </children>
+        </AnchorPane>
+        <!--AnchorPane For Problem Identification Start -->
+        <Label layoutX="22.0" layoutY="148.0" prefHeight="27.0" prefWidth="230.0" text="PROBLEM IDENTIFICATION">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        
+        <AnchorPane layoutX="22.0" layoutY="175.0" prefHeight="510.0" prefWidth="250.0" style="-fx-background-color: #fff; -fx-background-radius: 10px; -fx-border-color: #777;">
+            <children>
+                <CheckComboBox fx:id="chiefComplaintsName" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="220.0" />
+    
+                <Label layoutX="14.0" layoutY="20.0" prefHeight="20.0" prefWidth="145.0" text="Chief Complaints(CC)" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="93.0">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="155.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+                
+                <CheckComboBox fx:id="testName" layoutX="14.0" layoutY="420.0" prefHeight="25.0" prefWidth="220.0" />
+               
+                <Label layoutX="17.0" layoutY="400.0" prefHeight="20.0" prefWidth="124.0" text="Advicet/Test" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="110.0">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="105.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+                <!--OWN Examination Start --> 
+                <Label layoutX="15.0" layoutY="71.0" prefHeight="32.0" prefWidth="159.0" text="Own Examination(OE)" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="80.0">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="160.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+               
+                
+                
+               
+                
+                <ScrollPane layoutX="16.0" layoutY="103.0" prefHeight="290.0" prefWidth="220.0">
+               <content>
+                  <VBox fx:id="vBoxOwnExamination" prefHeight="328.0" prefWidth="221.0" />
+               </content>
+                </ScrollPane>
+            <Button layoutX="200.0" layoutY="75.0" mnemonicParsing="false" onAction="#addOwnExamination" prefHeight="20.0" prefWidth="36.0" style="-fx-background-color: #005ce6; -fx-background-radius: 30px;">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/126583-128.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+                
+                <!--OWN Examination End --> 
+               
+            </children>
+        </AnchorPane>
+        <!--AnchorPane For Problem Identification End -->
+        
+        <!--AnchorPane For MEDICINE PROCESS Start -->
+       
+        <Label layoutX="275.0" layoutY="148.0" prefHeight="27.0" prefWidth="250.0" text="MEDICINE PROCESS">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        
+        <AnchorPane fx:id="anchorPane" layoutX="275.0" layoutY="175.0" prefHeight="510.0" prefWidth="848.0" style="-fx-background-color: #fff; -fx-background-radius: 10px; -fx-border-color: #777;">
+            <children>
+                
+                <Label layoutX="18.0" layoutY="14.0" prefHeight="34.0" prefWidth="52.0">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/images%20(1).png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                
+                <Button layoutX="790.0" layoutY="16.0" mnemonicParsing="false" onAction="#addPrescriptionMedicin" prefHeight="30.0" prefWidth="36.0" style="-fx-background-color: #005ce6; -fx-background-radius: 30px;">
+                    <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/126583-128.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <VBox fx:id="vbxInner" layoutX="18.0" layoutY="62.0">
+                   
+        
+                </VBox>
+                
+                <Label layoutX="20.0" layoutY="428.0" prefHeight="20.0" prefWidth="78.0" text="Advice     ">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="70.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+                
+                <CheckComboBox fx:id="adviceName" layoutX="100.0" layoutY="428.0" prefHeight="25.0" prefWidth="280.0" />
+                
+                
+                <Label layoutX="410.0" layoutY="428.0" prefHeight="20.0" prefWidth="80.0" text="Next Visit ">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="475.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/RedStar.png" />
+                    </image>
+                </ImageView>
+                
+                <DatePicker fx:id="NextVisitDate" layoutX="495.0" layoutY="428.0" prefHeight="25.0" prefWidth="280.0" />
+
+                <Button fx:id="generatePrescriptionIds" layoutX="307.0" layoutY="460.0" mnemonicParsing="false" onAction="#generatePrescription" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #005ce6;" text="Generate Prescription" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/iconfinder_document-print_118913.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                
+            </children>
+        </AnchorPane>
+        <!--AnchorPane For MEDICINE PROCESS End -->
+    </children>
+   
+</AnchorPane>

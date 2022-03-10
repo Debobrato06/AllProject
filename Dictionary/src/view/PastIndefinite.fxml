@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="820.0" style="-fx-background-color: #527a7a;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.PastIndefiniteController">
+    <stylesheets>
+        <URL value="@/assets/style/pastindefinite.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="253.0" layoutY="-1.0" prefHeight="26.0" prefWidth="448.0" text="Past Indefinite Tenses Rules" textFill="#0a0790">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="324.0" fitWidth="650.0" layoutX="189.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/Past1Tense.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="72.0" layoutY="359.0" prefHeight="21.0" prefWidth="703.0" text="(V1 = first form of verb, V2 = Second form of verb, V3 = Third form of verb)">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="384.0" prefHeight="21.0" prefWidth="713.0" text="RULES ::  Subject + V12+ object ">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="413.0" prefHeight="21.0" prefWidth="679.0" text="EXAMPLE :::">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="434.0" prefHeight="29.0" prefWidth="679.0" text="a. Ram played a match.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="460.0" prefHeight="29.0" prefWidth="679.0" text="b. They cooked food.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="486.0" prefHeight="29.0" prefWidth="679.0" text="c. I went there.">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

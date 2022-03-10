@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Resturant.jnlp">
+  <information>
+    <title>Resturant</title>
+    <vendor>Debobrato Biswas</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Resturant.jar" size="6144995" download="eager" />
+    <jar href="lib\commons-codec-1.11.jar" size="335042" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\controlsfx-11.0.0.jar" size="932275" download="eager" />
+    <jar href="lib\httpclient-4.5.10.jar" size="774640" download="eager" />
+    <jar href="lib\httpcore-4.4.12.jar" size="328347" download="eager" />
+    <jar href="lib\jersey-server-2.29.1.jar" size="926663" download="eager" />
+    <jar href="lib\jfoenix-8.0.2.jar" size="2442326" download="eager" />
+    <jar href="lib\jfoenix-9.0.1.jar" size="2143605" download="eager" />
+    <jar href="lib\jfxtras-controls-8.0-r6.jar" size="229480" download="eager" />
+    <jar href="lib\json-simple-1.1.jar" size="16046" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.45-bin.jar" size="999810" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Resturant" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="controller.Master"  name="Resturant" />
+  <update check="always"/>
+</jnlp>

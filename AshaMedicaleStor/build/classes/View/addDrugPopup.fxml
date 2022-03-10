@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="125.0" prefWidth="496.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.AddDrugPopupController">
+   <children>
+      <Pane prefHeight="125.0" prefWidth="500.0" style="-fx-background-color: #a366ff; -fx-border-radius: 10px;">
+         <children>
+            <TextField fx:id="medicineName" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="228.0" promptText="Medicin Name">
+               <effect>
+                  <InnerShadow color="#629ab2" />
+               </effect>
+            </TextField>
+            <TextField fx:id="medicinePower" layoutX="250.0" layoutY="40.0" prefHeight="25.0" prefWidth="121.0" promptText="Power">
+               <effect>
+                  <InnerShadow color="#629ab2" />
+               </effect>
+            </TextField>
+            <TextField fx:id="medicinePrice" layoutX="379.0" layoutY="38.0" prefHeight="25.0" prefWidth="101.0" promptText="Medicine Price ">
+               <effect>
+                  <InnerShadow color="#629ab2" />
+               </effect>
+            </TextField>
+            <Label layoutX="78.0" layoutY="20.0" prefHeight="20.0" prefWidth="101.0" text="Medicin Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="271.0" layoutY="19.0" prefHeight="14.0" prefWidth="86.0" text="Power (mg)" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="118.0" layoutY="86.0" mnemonicParsing="false" onAction="#SAVE" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: green;" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="11.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/326675-128.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="207.0" layoutY="86.0" mnemonicParsing="false" onAction="#RESET" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #e69900;" text="Reset" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/678134-128.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Line endX="-100.0" endY="10.0" layoutX="496.0" layoutY="28.0" startX="-100.0" />
+            <Line endX="-108.0" endY="-0.5" layoutX="523.0" layoutY="28.0" startX="-126.5" startY="-0.5" />
+            <Button fx:id="exit" layoutX="297.0" layoutY="87.0" mnemonicParsing="false" onAction="#EXIT" style="-fx-background-color: #ff0000;" text="CLOSE">
+               <graphic>
+                  <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/211652-128.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Line endX="267.29290771484375" endY="-8.79290771484375" layoutX="-12.0" layoutY="39.0" startX="267.0" />
+            <Line endX="-76.0" endY="1.5" layoutX="346.0" layoutY="28.0" startX="-90.853515625" startY="1.5" />
+            <Line endX="30.5" endY="18.0" layoutX="333.0" layoutY="22.0" startX="30.5" startY="9.0" />
+            <Line endX="117.0" endY="0.5" layoutX="246.0" layoutY="30.0" startX="102.0" startY="0.5" />
+            <Line endX="267.29290771484375" endY="-8.79290771484375" layoutX="-206.0" layoutY="39.0" startX="267.0" />
+            <Line endX="-76.0" endY="1.5" layoutX="152.0" layoutY="28.0" startX="-90.853515625" startY="1.5" />
+            <Line endX="30.5" endY="18.0" layoutX="160.0" layoutY="23.0" startX="30.5" startY="9.0" />
+            <Line endX="117.0" endY="0.5" layoutX="73.0" layoutY="31.0" startX="102.0" startY="0.5" />
+            <Label layoutX="416.0" layoutY="17.0" prefHeight="20.0" prefWidth="35.0" text="Price" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Line endX="30.5" endY="18.0" layoutX="435.0" layoutY="20.0" startX="30.5" startY="9.0" />
+            <Line endX="117.0" endY="0.5" layoutX="348.0" layoutY="27.0" startX="102.0" startY="0.5" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

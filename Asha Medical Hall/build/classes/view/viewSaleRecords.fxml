@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="716.0" prefWidth="1135.0" style="-fx-background-color: #c299ff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewSaleRecordsController">
+   <children>
+      <TableView layoutX="28.0" layoutY="113.0" prefHeight="579.0" prefWidth="1079.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Pane layoutX="28.0" layoutY="49.0" prefHeight="55.0" prefWidth="1079.0" style="-fx-background-color: #a366ff;">
+         <children>
+            <TextField layoutX="96.0" layoutY="16.0" prefHeight="25.0" prefWidth="810.0" promptText="Search medicine" />
+            <Button layoutX="913.0" layoutY="16.0" mnemonicParsing="false" text="Search">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/iconfinder_search_322497%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutX="997.0" layoutY="14.0" mnemonicParsing="false"  style="-fx-background-color: #00b386;" text="Add Medicine">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/126583-128.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

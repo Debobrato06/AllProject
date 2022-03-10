@@ -1,0 +1,189 @@
+@media screen and (min-width: 769px) {
+    .gallery {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.is-touch .gallery {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.gallery.hasfooter {
+    padding-bottom: 50px;
+}
+.gallery--product {
+    padding-left: 350px;
+}
+.gallery--productsingle {
+    padding-left: 350px;
+    text-align: center;
+}
+.gallery__inner {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+}.gallery__slide, .gallery__slide--lonely {
+    display: block;
+    position: relative;
+    white-space: normal;
+}
+.gallery__slide.collection__cover {
+    background-color: #fff;
+}
+@media screen and (min-width: 769px) {
+    .gallery__slide.collection__cover {
+    border: 1px solid #e6e6e6;
+    border-width: 0 1px;
+}
+}.gallery__slide .collectioncover__text, .gallery__slide--lonely .collectioncover__text {
+    background-color: #fff;
+}
+.gallery-arrow {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    z-index: 5;
+    cursor: pointer;
+}
+.home-tab .owl-carousel .gallery-arrow{display:block!important}
+@media screen and (max-width: 769px) {
+    .gallery-arrow {
+    display: none !important;
+}
+} 
+.gallery-arrow:before {
+    font-family: 'icomoon3';
+    position: absolute;
+    top: 50%;
+    left: 0;
+  	width: 60px;
+  	height: 120px;
+  	line-height: 120px;
+    margin-top: -60px;             
+  	color: #fff;
+  	background-color: #000;
+  	background-repeat: no-repeat;
+  	background-position:  center;
+  	text-align: center;  	  	  	
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+}
+.gallery-left {
+    left: 0;   	
+}
+.gallery--product .gallery-left {
+    left: 350px;
+}
+.gallery-left:before {  
+  	background-image: url('http://cdn.shopify.com/s/files/1/0707/9121/t/2/assets/arrow_left.png?') !important;
+  	cursor: url(//cdn.shopify.com/s/files/1/0707/9121/t/2/assets/cursor_arrow_left.png?5405254473032290803), url(//cdn.shopify.com/s/files/1/0707/9121/t/2/assets/cursor_arrow_left.cur?5405254473032290803),w-resize;
+    content: ""}
+.gallery-right {
+    right: 0;
+}
+.gallery-right:before {
+  	background-image: url('http://cdn.shopify.com/s/files/1/0707/9121/t/2/assets/arrow_right.png?') !important;
+  	cursor: url(//cdn.shopify.com/s/files/1/0707/9121/t/2/assets/cursor_arrow_right.png?5405254473032290803), url(//cdn.shopify.com/s/files/1/0707/9121/t/2/assets/cursor_arrow_right.cur?5405254473032290803),e-resize;
+    content: ""}
+.gallery__slide p, .gallery__slide--lonely p {
+    margin-top: 12px;
+}
+.gallery__slide--lonely h2 {
+    margin: 0;
+}
+.gallery__slide--lonely.collection__cover {
+    border: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .gallery__slide, .gallery__slide--lonely {
+    
+}
+}@media screen and (min-width: 769px) {
+    .gallery__slide {
+    display: inline-block;
+    height: 100%;
+    margin-left: -4px;
+    width: auto;
+    overflow: hidden;
+}
+.gallery__slide:first-child {
+    margin: 0;
+}
+.gallery__slide--lonely {
+    display: inline-block;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+.gallery__slide--lonelypanel {
+    display: inline-block;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+    white-space: initial;
+}
+.gallery__slide--lonelypanel .collectioncover__text {
+    padding: 0;
+}
+}.page {
+    padding: 24px;
+    overflow: auto;
+    width: 100%}
+.slide__image {
+    display: block;
+}
+@media screen and (max-width: 769px) {
+    .slide__image {
+    width: 100%}
+}@media screen and (min-width: 769px) {
+    .slide__image {
+    height: 100%;
+    width: auto;
+}
+}.slide__page {
+    border-bottom: 1px solid #e6e6e6;
+}
+.slide__page .collectioncover__text {
+    background-color: #fff !important;
+}
+.slide__page .rte h1 {
+    border-bottom: 1px solid #e6e6e6;
+    color: #000;
+    font: 700 36px/42px "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0 auto 24px;
+    padding: 0 0 12px;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 769px) {
+    .slide__page {
+    border: 0;
+    border-width: 0 1px;
+    width: 350px;
+}
+}
+
+@media screen and (min-width: 769px) {
+  .visible-768{
+  	display: block !important;
+  }
+  .hidden-768{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .visible-768{
+  	display: none !important;
+  }
+  .hidden-768{
+    display: block !important;
+  }
+}

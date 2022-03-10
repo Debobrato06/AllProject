@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="703.0" prefWidth="1150.0" style="-fx-background-color: #b3e6ff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RackJoinMedicineGroupController">
+    <stylesheets>
+        <URL value="@/assets/style/rackjoinmedicinegroup.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="11.0" layoutY="28.0" prefHeight="63.0" prefWidth="1130.0" style="-fx-background-color: #00b38f;">
+         <children>
+            <Label prefHeight="44.0" prefWidth="1100.0" style="-fx-background-color: #00b38f;" text=" RACK JOIN MEDICINE GROUP LIST" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Bookman Old Style Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="rackJoinMedicineGroupList" layoutX="11.0" layoutY="103.0" prefHeight="578.0" prefWidth="1130.0" style="-fx-background-color: NONE;">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="162.0" text="SL" />
+            <TableColumn fx:id="genericName" prefWidth="562.0" text="Generic Name" />
+            <TableColumn fx:id="rackName" prefWidth="400.0" text="Rack Name" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

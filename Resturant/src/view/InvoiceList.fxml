@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="689.0" prefWidth="1267.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InvoiceListController">
+    <stylesheets>
+        <URL value="@/assets/style/invoicelist.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="invoiceListTable" editable="true" layoutX="9.0" layoutY="74.0" prefHeight="604.0" prefWidth="1250.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="55.0" text="SL" />
+            <TableColumn fx:id="clientID" prefWidth="243.0" text="Client Id" />
+            <TableColumn fx:id="netAmountCloumn" prefWidth="243.0" text="Net Amount " />
+            <TableColumn fx:id="paidAmountCloumn" prefWidth="228.0" text="Paid Amount" />
+            <TableColumn fx:id="returnAmountCloumn" prefWidth="215.0" text="Return Amount" />
+            <TableColumn fx:id="paymentDate" prefWidth="191.0" text="Payment Date" />
+            <TableColumn fx:id="action" prefWidth="71.0" text="Action" />
+         </columns>
+      </TableView>
+      <Label layoutX="9.0" layoutY="23.0" prefHeight="44.0" prefWidth="1250.0" style="-fx-background-color: #d9b3ff;" text=" Invoice List" textFill="#7f07ae">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

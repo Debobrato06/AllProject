@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="744.0" prefWidth="1027.0" style="-fx-background-color: #75a3a3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MasterController">
+   <children>
+      <BorderPane fx:id="borderpane" layoutX="-3.0" layoutY="33.0" prefHeight="721.0" prefWidth="1033.0" style="-fx-background-color: #527a7a;">
+         <top>
+            <Pane prefHeight="58.0" prefWidth="749.0" style="-fx-background-color: #3d5c5c;" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <JFXButton layoutX="14.0" layoutY="7.0" onAction="#home" prefHeight="44.0" prefWidth="106.0" text="HOME" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/Home%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="148.0" layoutY="7.0" onAction="#dictionary" prefHeight="44.0" prefWidth="171.0" text="DICTIONARY" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/dictionary.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="358.0" layoutY="7.0" onAction="#tenses" prefHeight="44.0" prefWidth="108.0" text="TENSES" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="914.0" layoutY="7.0" onAction="#about" prefHeight="44.0" prefWidth="102.0" text="ABOUT" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="502.0" layoutY="7.0" onAction="#preposition" prefHeight="44.0" prefWidth="173.0" text="PREPOSITION" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="710.0" layoutY="7.0" onAction="#articles" prefHeight="44.0" prefWidth="173.0" text="ARTICLES" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <Pane fx:id="homePane" prefHeight="559.0" prefWidth="791.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="54.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="49.0" layoutY="258.0" prefHeight="43.0" prefWidth="401.0" style="-fx-background-color: #13d6af;">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="45.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/download.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="67.0" layoutY="5.0" prefHeight="33.0" prefWidth="243.0" text="Dictionary" textFill="WHITE">
+                           <font>
+                              <Font name="Bookman Old Style" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="49.0" layoutY="310.0" prefHeight="43.0" prefWidth="401.0" style="-fx-background-color: #13d6af;">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="45.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/2.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="67.0" layoutY="5.0" prefHeight="33.0" prefWidth="243.0" text="Tenses" textFill="WHITE">
+                           <font>
+                              <Font name="Bookman Old Style" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="49.0" layoutY="424.0" prefHeight="43.0" prefWidth="401.0" style="-fx-background-color: #13d6af;">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="45.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/background1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="66.0" layoutY="4.0" prefHeight="33.0" prefWidth="243.0" text="Articles" textFill="WHITE">
+                           <font>
+                              <Font name="Bookman Old Style" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="49.0" layoutY="366.0" prefHeight="43.0" prefWidth="401.0" style="-fx-background-color: #13d6af;">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="45.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/image/logo1.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="68.0" layoutY="5.0" prefHeight="33.0" prefWidth="243.0" text="Preposition" textFill="WHITE">
+                           <font>
+                              <Font name="Bookman Old Style" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children></Pane>
+         </center>
+      </BorderPane>
+      <Button fx:id="close" layoutX="995.0" layoutY="1.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: none; -fx-border-color: white;">
+         <graphic>
+            <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/iconfinder_f-cross_256_282471.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="minimiz" layoutX="958.0" layoutY="1.0" mnemonicParsing="false" onAction="#minimiz" prefHeight="17.0" prefWidth="31.0" style="-fx-background-color: none; -fx-border-color: white;">
+         <graphic>
+            <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/211863-128.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
